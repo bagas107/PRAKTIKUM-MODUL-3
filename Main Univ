@@ -1,0 +1,31 @@
+package main;
+public class main_1main {
+    public static void main(String[] args) {
+        Univ sby = new Univ(); 
+        sby.setnama("1. UNIVERSITAS AIRLANGGA(UNAIR) \n\t\t  2. UNIVERSITAS NEGERI SURABAYA(UNESA)"+
+                "\n\t\t  3. UNIVERSITAS SUNAN AMPEL (UINSA) \n\t\t  4. UNIVERSITAS BELA NEGARA SURABAYA(UPN)"+
+                "\n\t\t  5. INSTITUT TEKNOLOGI SEPULUH NOVEMBER(ITS)");
+        System.out.println("=============================================================");
+        System.out.println("                 UNIVERSITAS NEGERI JAWA TIMUR               ");
+        System.out.println("==============================================================");
+        System.out.println("SURABAYA\t :"+sby.getnama());
+        System.out.println(" ");
+       
+        Univ mlg = new Univ();
+        mlg.setnama("1. UNIVERSITAS NEGERI MALANG(UM) \n\t\t  2. UNIVERSITAS BRAWIJAYA(UB)"
+                + "\n\t\t  3. UNIVERSITAS MAULANA MALIK IBRAHIM");
+        System.out.println("MALANG\t\t :"+mlg.getnama());
+         System.out.println(" ");
+         
+        Univ jbr = new Univ();
+        jbr.setnama("1. UNIVERSITAS JEMBER");
+        System.out.println("JEMBER\t\t :"+jbr.getnama());
+        System.out.println(" ");
+        
+        Univ mdr = new Univ();
+        mdr.setnama("1.UNIVERSITAS TRUNOJOYO MADURA");
+        System.out.println("MADURA\t\t :"+mdr.getnama());
+        System.out.println(" ");
+        System.out.println("=============================================================");
+    }   
+}
