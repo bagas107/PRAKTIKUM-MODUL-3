@@ -1,0 +1,26 @@
+package main;
+
+
+class data{
+    String Nama;
+    String Nim;
+    String Alamat;
+    public data(String Nama,String Nim,String Alamat){
+        this.Nama=Nama;
+        this.Nim=Nim;
+        this.Alamat=Alamat;
+    }
+    data(){
+        
+    }
+}
+class datamhs extends data{
+    String Jurusan;
+    public datamhs(String Nama,String Nim, String Alamat, String Jurusan){
+       super(Nama,Nim,Alamat);
+       this.Jurusan=Jurusan;
+    }
+    datamhs(){
+        
+    }
+}
