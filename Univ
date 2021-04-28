@@ -1,0 +1,18 @@
+package main;
+
+public class Univ {
+    static String namauniv;
+    
+    static void univ(String namauniv){
+    }
+    
+    public void setnama(String namauniv){
+        Univ.namauniv=namauniv;
+    }
+    public String getnama(){
+
+        return Univ.namauniv;
+    }
+   
+    
+}
