@@ -1,0 +1,69 @@
+package main;
+import java.util.Scanner;
+public class main_scanner {
+    public static void main(String[]args){
+        String ulang;
+        do{
+            int pilih;
+            datamhs data = new datamhs();
+            Scanner input=new Scanner(System.in);
+            System.out.println("==========================");
+            System.out.println("   INPUT DATA MAHASISWA   ");
+            System.out.println("==========================");
+            System.out.print("Masukkan NIM\t\t: ");
+            data.Nama=input.nextLine();
+            System.out.print("Masukkan Nama\t\t: ");
+            data.Nim=input.nextLine();
+            System.out.print("Masukkan Alamat\t\t: ");
+            data.Alamat=input.nextLine();
+            System.out.println("Jurusan/Prodi ");
+            System.out.println("61 = Matematika\t 64 = Fisika");
+            System.out.println("62 = Biologi\t 65 = Teknik Informatika");
+            System.out.println("63 = Kimia\t 66 = Sistem Informasi");
+            System.out.print("Masukkan Kode Jurusan : ");
+            pilih=input.nextInt();
+            switch (pilih) {
+                case 61:
+                    data.Jurusan="Matematika";
+                    break;
+                case 62:
+                    data.Jurusan="Biologi";
+                    break;
+                case 63:
+                    data.Jurusan="Kimia";
+                    break;
+                case 64:
+                    data.Jurusan="Fisika";
+                    break;
+                case 65:
+                    data.Jurusan="Teknik Informatika";
+                    break;
+                case 66:
+                    data.Jurusan="Sistem Informasi";
+                    break;
+                default:
+                    data.Jurusan="Pilihan Tidak Valid";
+                    break;
+            }
+            
+            System.out.println("==========================");
+            System.out.println("       DATA MAHASISWA     ");
+            System.out.println("==========================");
+            System.out.println("NIM\t : "+data.Nim);
+            System.out.println("NAMA\t : "+data.Nama);
+            System.out.println("ALAMAT\t : "+data.Alamat);
+            System.out.println("JURUSAN\t : "+data.Jurusan);
+            System.out.println("==========================");
+            System.out.print("APAKAH INGIN MENGULANG [Y/N]? ; ");
+            ulang = input.next();
+            switch(ulang){
+                case"y":
+                case"Y":
+                    break;
+                case"n":
+                case"N":
+                   break;
+            }
+        }while ( ulang.equals("Y")||ulang.equals("y"));
+    }
+}
